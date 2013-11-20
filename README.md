@@ -30,5 +30,5 @@ a header that contains the functions:
   --initializes TACCRO and TACCR1 to a maximum of 60% duty cycles as to not burn the motor controller
   
   motors.c 
-  ============
+ ==============
   the implementation of these functions
