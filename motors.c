@@ -1,7 +1,7 @@
 /*
  * Implementation of the functions listed in motors.h
  *
- *  Created on: Nov 19, 2013
+ *  Created on: November 19, 2013
  *      Author: C15Nikolas.Taormina
  */
 #include <msp430.h>
