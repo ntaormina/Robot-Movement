@@ -1,8 +1,13 @@
 Robot-Movement
 ==============
-main.c is example code for using the implementation of motors.c
+main.c
+==============
+example code for using the implementation of motors.c
 
-motors.h is a header that contains the functions:
+motors.h 
+==============
+a header that contains the functions:
+
   `void turnRightSlight()`
     --this turns the robot right less than 45 degrees
     
@@ -24,4 +29,6 @@ motors.h is a header that contains the functions:
   `void setUpTimerA()`
   --initializes TACCRO and TACCR1 to a maximum of 60% duty cycles as to not burn the motor controller
   
-  motors.c is the implementation of these functions
+  motors.c 
+  =============
+  the implementation of these functions
