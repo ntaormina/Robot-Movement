@@ -8,16 +8,20 @@
 void main(void) {
 	WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 
-	setUpTimerA();
-	turnRightSlight();
-    _delay_cycles(10000);
-     turnLeftSlight();
-    _delay_cycles(10000);
-    turnRightLarge();
-    _delay_cycles(10000);
-    turnLeftLarge();
-    _delay_cycles(10000);
-     forward();
+
+		setUpTimerA();
+		turnRightSlight();
+		__delay_cycles(1000000);
+		turnLeftSlight();
+		__delay_cycles(1000000);
+		turnRightLarge();
+		__delay_cycles(1000000);
+		turnLeftLarge();
+		__delay_cycles(1000000);
+		forward();
+		__delay_cycles(1000000);
+		reverse();
+		__delay_cycles(1000000);
 
 }
 

@@ -31,4 +31,12 @@ a header that contains the functions:
   
 motors.c 
 ==============
-  the implementation of these functions
+ the implementation of these functions
+
+DOCUMENTATION:
+==============
+ I got help here from C2C Colin Busho on how to change my logic high and low to 
+using PWM. I also got help from C2C Caleb Ziegler on ideas for how to code here, specifically how to 
+clear the TACCTL registers and how those were useful.
+
+ 

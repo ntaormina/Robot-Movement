@@ -21,6 +21,8 @@ void forward();
 
 void reverse();
 
+void fullStop();
+
 void setUpTimerA();
 
 
