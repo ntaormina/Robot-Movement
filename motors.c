@@ -17,6 +17,13 @@ void turnLeftSlight() {
 
 	__delay_cycles(500000);				//1 seconds
 
+//	int i = 0;
+//		while(i < 1000){
+//			if(TACCR0 == TAR){
+//				i++;
+//			}
+//		}
+
 }
 
 void turnRightSlight() {
@@ -28,6 +35,13 @@ void turnRightSlight() {
 	TA1CTL |= MC0;				//count up
 
 	__delay_cycles(500000);				//1 seconds
+
+//	int i = 0;
+//			while(i < 1000){
+//				if(TACCR0 == TAR){
+//					i++;
+//				}
+//			}
 
 }
 
@@ -41,6 +55,13 @@ void turnLeftLarge() {
 
 	__delay_cycles(1000000);				//2 seconds
 
+//	int i = 0;
+//			while(i < 1000){
+//				if(TACCR0 == TAR){
+//					i++;
+//				}
+//			}
+
 }
 
 void turnRightLarge() {
@@ -52,6 +73,12 @@ void turnRightLarge() {
 	TA1CTL |= MC0;				//count up
 
 	__delay_cycles(1000000);				//2 seconds
+//	int i = 0;
+//			while(i < 1000){
+//				if(TACCR0 == TAR){
+//					i++;
+//				}
+//			}
 
 }
 
@@ -92,6 +119,8 @@ void reverse() {
 	TA1CTL |= MC0;
 
 	__delay_cycles(1000000);			//1 seconds
+
+
 
 }
 
