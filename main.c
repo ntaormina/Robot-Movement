@@ -11,16 +11,22 @@ void main(void) {
 
 		setUpTimerA();
 		turnRightSlight();
+		fullStop();
 		__delay_cycles(1000000);
 		turnLeftSlight();
+		fullStop();
 		__delay_cycles(1000000);
 		turnRightLarge();
+		fullStop();
 		__delay_cycles(1000000);
 		turnLeftLarge();
+		fullStop();
 		__delay_cycles(1000000);
 		forward();
+		fullStop();
 		__delay_cycles(1000000);
 		reverse();
+		fullStop();
 		__delay_cycles(1000000);
 
 }

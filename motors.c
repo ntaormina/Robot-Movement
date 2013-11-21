@@ -15,7 +15,7 @@ void turnLeftSlight() {
 	TA0CCTL1 |= OUTMOD_7;	 //reset/set
 	TA0CTL |= MC0;				//count up
 
-	__delay_cycles(1000000);				//1 seconds
+	__delay_cycles(500000);				//1 seconds
 
 }
 
@@ -27,7 +27,7 @@ void turnRightSlight() {
 	TA1CCTL1 |= OUTMOD_7;	 //reset/set
 	TA1CTL |= MC0;				//count up
 
-	__delay_cycles(1000000);				//1 seconds
+	__delay_cycles(500000);				//1 seconds
 
 }
 
@@ -39,7 +39,7 @@ void turnLeftLarge() {
 	TA0CCTL1 |= OUTMOD_7;	 //reset/set
 	TA0CTL |= MC0;				//count up
 
-	__delay_cycles(2000000);				//2 seconds
+	__delay_cycles(1000000);				//2 seconds
 
 }
 
@@ -51,7 +51,7 @@ void turnRightLarge() {
 	TA1CCTL1 |= OUTMOD_7;	 //reset/set
 	TA1CTL |= MC0;				//count up
 
-	__delay_cycles(2000000);				//2 seconds
+	__delay_cycles(1000000);				//2 seconds
 
 }
 
@@ -66,7 +66,7 @@ void forward() {
 	TA0CTL |= MC0;				//count up
 	TA1CTL |= MC0;
 
-	__delay_cycles(1000000);			//1 seconds
+	__delay_cycles(2000000);			//1 seconds
 
 }
 void reverse() {

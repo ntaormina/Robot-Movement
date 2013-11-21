@@ -36,7 +36,7 @@ motors.c
 DOCUMENTATION:
 ==============
  I got help here from C2C Colin Busho on how to change my logic high and low to 
-using PWM. I also got help from C2C Caleb Ziegler on ideas for how to code here, specifically how to 
-clear the TACCTL registers and how those were useful.
+using PWM and how TA0 and TA1 applied to the different registers. I also got help from C2C Caleb Ziegler on 
+ideas for how to code here, specifically how to clear the TACCTL for reverse.
 
  
