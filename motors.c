@@ -11,50 +11,23 @@ void turnLeftSlight() {
 	TA0CTL &= ~MC0;		//Halts timers
 	TA0CTL &= ~MC1;
 
-	TA0CCTL0 &= ~OUTMOD_4;   //right negative motor terminal cleared
-	TA0CCTL0 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_7;	 //right positive motor terminal cleared
-	TA0CCTL1 &= ~OUTMOD_5;
-
 	TA0CCTL0 |= OUTMOD_5;    //reset
 	TA0CCTL1 |= OUTMOD_7;	 //reset/set
 	TA0CTL |= MC0;				//count up
 
 	__delay_cycles(1000000);				//1 seconds
 
-	TA0CTL &= ~(MC1 | MC0);
-	TA0CCTL0 &= ~OUTMOD_4;
-	TA0CCTL0 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_7;
-	TA0CCTL0 |= OUTMOD_5;				//set to reset to stop
-	TA0CCTL1 |= OUTMOD_5;
-	TA0CTL |= MC0;
 }
 
 void turnRightSlight() {
 	TA1CTL &= ~MC0;		//Halts timers
 	TA1CTL &= ~MC1;
 
-	TA1CCTL0 &= ~OUTMOD_4;   //left negative motor terminal cleared
-	TA1CCTL0 &= ~OUTMOD_5;
-	TA1CCTL1 &= ~OUTMOD_7;	 //left positive motor terminal cleared
-	TA1CCTL1 &= ~OUTMOD_5;
-
 	TA1CCTL0 |= OUTMOD_5;    //reset
 	TA1CCTL1 |= OUTMOD_7;	 //reset/set
 	TA1CTL |= MC0;				//count up
 
 	__delay_cycles(1000000);				//1 seconds
-
-	TA1CTL &= ~(MC1 | MC0);
-	TA1CCTL0 &= ~OUTMOD_4;
-	TA1CCTL0 &= ~OUTMOD_5;
-	TA1CCTL1 &= ~OUTMOD_5;
-	TA1CCTL1 &= ~OUTMOD_7;
-	TA1CCTL0 |= OUTMOD_5;				//set to reset to stop
-	TA1CCTL1 |= OUTMOD_5;
-	TA1CTL |= MC0;
 
 }
 
@@ -62,35 +35,17 @@ void turnLeftLarge() {
 	TA0CTL &= ~MC0;		//Halts timers
 	TA0CTL &= ~MC1;
 
-	TA0CCTL0 &= ~OUTMOD_4;   //right negative motor terminal cleared
-	TA0CCTL0 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_7;	 //right positive motor terminal cleared
-	TA0CCTL1 &= ~OUTMOD_5;
-
 	TA0CCTL0 |= OUTMOD_5;    //reset
 	TA0CCTL1 |= OUTMOD_7;	 //reset/set
 	TA0CTL |= MC0;				//count up
 
 	__delay_cycles(2000000);				//2 seconds
 
-	TA0CTL &= ~(MC1 | MC0);
-	TA0CCTL0 &= ~OUTMOD_4;
-	TA0CCTL0 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_7;
-	TA0CCTL0 |= OUTMOD_5;				//set to reset to stop
-	TA0CCTL1 |= OUTMOD_5;
-	TA0CTL |= MC0;
 }
 
 void turnRightLarge() {
 	TA1CTL &= ~MC0;		//Halts timers
 	TA1CTL &= ~MC1;
-
-	TA1CCTL0 &= ~OUTMOD_4;   //left negative motor terminal cleared
-	TA1CCTL0 &= ~OUTMOD_5;
-	TA1CCTL1 &= ~OUTMOD_7;	 //left positive motor terminal cleared
-	TA1CCTL1 &= ~OUTMOD_5;
 
 	TA1CCTL0 |= OUTMOD_5;    //reset
 	TA1CCTL1 |= OUTMOD_7;	 //reset/set
@@ -98,25 +53,11 @@ void turnRightLarge() {
 
 	__delay_cycles(2000000);				//2 seconds
 
-	TA1CTL &= ~(MC1 | MC0);
-	TA1CCTL0 &= ~OUTMOD_4;
-	TA1CCTL0 &= ~OUTMOD_5;
-	TA1CCTL1 &= ~OUTMOD_5;
-	TA1CCTL1 &= ~OUTMOD_7;
-	TA1CCTL0 |= OUTMOD_5;				//set to reset to stop
-	TA1CCTL1 |= OUTMOD_5;
-	TA1CTL |= MC0;
-
 }
 
 void forward() {
 	TA0CTL &= ~MC0;		//Halts timers
 	TA0CTL &= ~MC1;
-
-	TA0CCTL0 &= ~OUTMOD_4;   //right negative motor terminal cleared
-	TA0CCTL0 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_7;	 //right positive motor terminal cleared
-	TA0CCTL1 &= ~OUTMOD_5;
 
 	TA0CCTL0 |= OUTMOD_5;
 	TA0CCTL1 |= OUTMOD_7;
@@ -126,24 +67,6 @@ void forward() {
 	TA1CTL |= MC0;
 
 	__delay_cycles(1000000);			//1 seconds
-
-	TA0CTL &= ~(MC1 | MC0);
-	TA0CCTL0 &= ~OUTMOD_4;
-	TA0CCTL0 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_7;
-	TA0CCTL0 |= OUTMOD_5;				//set to reset to stop
-	TA0CCTL1 |= OUTMOD_5;
-	TA0CTL |= MC0;
-
-	TA1CTL &= ~(MC1 | MC0);
-	TA1CCTL0 &= ~OUTMOD_4;
-	TA1CCTL0 &= ~OUTMOD_5;
-	TA1CCTL1 &= ~OUTMOD_5;
-	TA1CCTL1 &= ~OUTMOD_7;
-	TA1CCTL0 |= OUTMOD_5;				//set to reset to stop
-	TA1CCTL1 |= OUTMOD_5;
-	TA1CTL |= MC0;
 
 }
 void reverse() {
@@ -169,28 +92,6 @@ void reverse() {
 	TA1CTL |= MC0;
 
 	__delay_cycles(1000000);			//1 seconds
-
-	TA0CTL &= ~(MC1 | MC0);
-	TA1CTL &= ~(MC1 | MC0);
-
-	TA0CCTL0 &= ~OUTMOD_4;
-	TA0CCTL0 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_5;
-	TA0CCTL1 &= ~OUTMOD_7;
-
-	TA1CCTL0 &= ~OUTMOD_4;
-	TA1CCTL0 &= ~OUTMOD_5;
-	TA1CCTL1 &= ~OUTMOD_5;
-	TA1CCTL1 &= ~OUTMOD_7;
-
-	TA0CCTL0 |= OUTMOD_5;				//set to reset to stop
-	TA0CCTL1 |= OUTMOD_5;
-
-	TA1CCTL0 |= OUTMOD_5;				//set to reset to stop
-	TA1CCTL1 |= OUTMOD_5;
-
-	TA0CTL |= MC0;
-	TA1CTL |= MC0;
 
 }
 
